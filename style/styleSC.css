@@ -1,0 +1,279 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background-color: #0c0e6e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* Añadido para el posicionamiento del botón de login */
+}
+
+header h1 {
+    margin: 0;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+/* Estilo para el botón de login */
+.login-button {
+    position: absolute; /* Posicionamiento absoluto */
+    right: 20px; /* Alineado a la derecha */
+    top: 50%; /* Centrado verticalmente */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 3s ease-in;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 4s ease-in;
+    text-align: center; /* Centra el contenido principal */
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    animation: fadeIn 5s ease-in;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 6s ease-in;
+    text-align: center; /* Centra el contenido de las secciones */
+}
+
+section h2, section h3 {
+    color: #0c0e6e;
+    animation: fadeIn 7s ease-in;
+}
+
+/* Nuevo contenedor para Misión y Visión */
+.mision-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center; /* Centra el contenido de las secciones */
+}
+
+.mision-vision-container section {
+    flex: 1;
+    max-width: 45%;
+}
+
+.mision-vision-container img {
+    width: 30px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 8s ease-in;
+}
+
+form fieldset {
+    border: none;
+}
+
+form legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #0c0e6e;
+    animation: fadeIn 9s ease-in;
+}
+
+form div {
+    margin-bottom: 15px;
+    animation: fadeIn 10s ease-in;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    animation: fadeIn 11s ease-in;
+}
+
+form input[type="text"], 
+form input[type="number"], 
+form input[type="email"], 
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    animation: fadeIn 12s ease-in;
+}
+
+form input[type="text"]:focus, 
+form input[type="number"]:focus, 
+form input[type="email"]:focus, 
+form textarea:focus {
+    border-color: #0c0e6e;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Estilos de la lista de actividades */
+.actividades-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.actividades-list li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.actividades-list i {
+    margin-right: 8px;
+    color: #0c0e6e;
+}
+
+/* Estilos de las subactividades */
+.subactivities-list {
+    list-style-type: none;
+    padding: 0;
+    display: none; /* Oculto por defecto */
+    margin-top: 10px;
+}
+
+.subactivities-list li {
+    background-color: #f4f4f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos del botón de donación */
+.donate-button {
+    background-color: #0c0e6e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #0b0d60;
+    transform: scale(1.1);
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer div {
+    margin: 10px 0;
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .mision-vision-container {
+        flex-direction: column;
+    }
+
+    .mision-vision-container section {
+        max-width: 100%;
+    }
+
+    .mision-vision-container img {
+        width: 50px; /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
+
+    /* Estilo para el botón de login en pantallas pequeñas */
+    .login-button {
+        position: static;
+        margin-top: 10px;
+    }
+}
